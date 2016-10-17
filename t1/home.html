@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top" id="topmenu">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">WebSiteName</a>
@@ -24,9 +24,27 @@
       <li><a href="#">Page 2</a></li> 
       <li><a href="#">Page 4</a></li> 
     </ul>
-	<ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    <ul class="navbar-right">
+    <div class="form-group" style="margin-top: 15px; ">
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="pwd1" placeholder="Enter email/login">
+        <a href="https://www.facebook.com/recover/initiate?lwv=110">Esqueceste-te da tua conta?</a>
+      </div>
+      <div class="col-sm-5">
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+        <a href="https://www.facebook.com/recover/initiate?lwv=110">Regista te</a>
+      </div>
+      <div class="col-sm-2">
+        <tr>
+          <td>
+            <a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+          </td>
+          <td>
+            <a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+          </td>
+        </tr>
+      </div>
+      </div>
     </ul>
   </div>
 </nav>
@@ -35,11 +53,18 @@
 <div class="body_">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <ul class="nav navbar-nav nav2>
+    <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
       <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li> 
-      <li><a href="#">Page 3</a></li> 
+      <li><a href="#">Page 2</a></li>
+       <div class="col-md-3 input-group">
+            <input type="text" class="form-control input-lg" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-lg" type="button">
+                          <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+          </div>
     </ul>
   </div>
 </nav>
